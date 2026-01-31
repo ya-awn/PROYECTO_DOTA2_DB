@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS DOTA_DB;
-CREATE DATABASE DOTA_DB;
+-- ESTE SCRIPT SOLO SE EJECUTA 1 VEZ
+CREATE DATABASE IF NOT EXISTS DOTA_DB;
 USE DOTA_DB;
 
 -- Informacion sobre los heroes
@@ -48,7 +48,7 @@ CREATE INDEX idx_match_players_hero ON Match_Players(Hero_id);
 SELECT * FROM Match_Players;
 
 
-
+SELECT * FROM Heroes LIMIT 10;
 
 
 
